@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Business Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="libs/browser-polyfill.min.js"></script>
+        <script src="libs/jquery.min.js"></script>
+        <link rel="stylesheet" href="libs/bootstrap.min.css">
+        <style>
+            .list-unstyled{
+                padding-left: 0;
+                list-style: none;
+                padding: 0px;
+                background-color: #397ead;
+                /* border-radius: 0.3rem; */
+            }
+            li{
+                display: block;
+                color: white;
+                padding: 0.8rem 1rem;
+            }
+            li:hover{
+                background-color: #5a94bb;
+            }
+            a:hover{
+                background-color: white;
+                text-decoration: none;
+            }
+        </style>
+        
+        <script src="libs/popper.min.js"></script>
+        <script src="libs/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+        <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container-fluid  d-flex flex-column h-100">
+            <div class="row color-tone top-bar pd-2">
+                <div class="col-md-2 logo text-center">
+                    <a href="http://localhost/project/dashboard" class="logo-text "><h3>Dashboard</h3></a>
+                </div>
+                <!-- <div class="col-sm-4 px-3">
+                    <form class="form-group-inline">
+                        <input type="search" class="form-control" id="search" placeholder="Search">
+                    </form>
+                </div> -->
+                <div class="col-sm-10">
+                    <div class="dropdown float-right">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background-color: white; color: black; border: white;">Abin Joseph</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">My Account</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="http://localhost/project/users/logout">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+            <div class="row h-100">
+                <nav class="container-fluid col-md-2 d-flex flex-column justify-content-around color-tone px-0">
+                    <div class="user-info pt-5">
+                        <img src="http://localhost/project/user_files/profile_pic/default.png" class="avatar" width="100px">
+                        <p class="my-3 username"> Abin Joseph </p>
+                    </div>
+
+                    <!-- <div class="nav list-group my-3">
+                        <a href="http://localhost/project/dashboard" class="list-group-item list-group-item-action active p-3">
+                            Sales Analysis                            
+                        </a>
+                        <a href="http://localhost/project/#" class="list-group-item list-group-item-action p-3">
+                            Marketing Analysis                            
+                        </a>
+                        <a href="http://localhost/project/dashboard/upload" class="list-group-item list-group-item-action p-3">
+                            Data Upload                            
+                        </a>
+                        <a href="http://localhost/project/dashboard/manage" class="list-group-item list-group-item-action p-3">
+                            Manage Data                            </a>
+                        <a href="http://localhost/project/#" class="list-group-item list-group-item-action p-3">
+                            Account Settings                            
+                        </a>
+                        <a href="http://localhost/project/#" class="list-group-item list-group-item-action p-3">
+                            Dashboard Settings
+                        </a>
+                    </div> -->
+                    <ul class="list-unstyled">
+                        <a href="http://localhost/project/dashboard">
+                            <li>Sales Analysis</li>
+                        </a>
+                        <a href="http://localhost/project/dashboard">
+                            <li>Marketing Analysis </li>
+                        </a>
+                        <a href="http://localhost/project/dashboard">
+                            <li>Data Upload</li>
+                        </a>
+                        <a href="http://localhost/project/dashboard">
+                            <li>Manage Data</li>
+                        </a>
+                        <a href="http://localhost/project/dashboard">
+                            <li>Account Settings</li>
+                        </a>
+                        <a href="http://localhost/project/dashboard">
+                            <li>Dashboard Settings</li>
+                        </a>
+                    </ul>
+                </nav>
+            <div class="container col-md-10 mt-3 right-side scroll"><div class="home" style="display: block;">
+                <div class="row  mx-2 mt-2 basicstats">
+                    <div class="card col-md mx-2 my-2 totalproducts">
+                        <div class="card-body py-3">
+                            <h5 class="cardheads">Products</h5>
+                            <h6 class="cardvalue">764</h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card col-md mx-2 my-2 totalsales">
+                        <div class="card-body py-3">
+                            <h5 class="cardheads">Units Sold</h5>
+                            <h6 class="cardvalue" id="">3797</h6>
+                        </div>
+                    </div>
+                    <div class="card col-md mx-2 my-2 totalrevenue">
+                        <div class="card-body py-3">
+                            <h5 class="cardheads">Reveneue</h5>
+                            <div class="currency">
+                                <h6 class="currency-sign inline-flex cardvalue">1082661</h6>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="card col-md mx-2 my-2 topsold">
+                        <div class="card-body py-3">
+                            <h5 class="cardheads">Top Selling Product</h5>
+                            <h6 class="cardvalue">Imation&nbsp;16GB Mini TravelDrive USB 2.0&nbsp;Flash Drive</h6>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="row mx-3 advancedStats">
+                    <div class="col-lg-8 card p-1 mr-2 my-2 yearlyStats">
+                        <div class="card-body py-3">
+                            <div class="text-center">
+                                <div class="btn-group yearBtns" role="group" aria-label="Basic example"><button type="button" class="btn btn-primary yearBtn" id="yearAll Years">All Years</button><button type="button" class="btn btn-primary yearBtn" id="year2014">2014</button><button type="button" class="btn btn-primary yearBtn" id="year2015">2015</button><button type="button" class="btn btn-primary yearBtn" id="year2016">2016</button><button type="button" class="btn btn-primary yearBtn" id="year2017">2017</button></div>
+                            </div>
+                            <div class="yearlyCharts">
+                                <div class="col-sm" id="yearStatChart"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="yearChart" width="980" height="544" class="chartjs-render-monitor" style="display: block; height: 272px; width: 490px;"></canvas></div>
+                            </div>
+                                
+                        </div>
+                    </div>
+            
+                    <div class="col-lg card my-2">
+            
+                        <div class="card-body d-flex align-items-center no-y-padding" id="categoryCharts"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div><canvas id="categoriesSaleChart" width="1092" height="1092" class="chartjs-render-monitor" style="display: block; height: 546px; width: 546px;"></canvas></div>
+            
+                    </div>
+                </div>
+                <div class="row basicStats">
+                
+                </div>
+                <div class="row timeCharts">
+                    <div class="col-md-6" id="monthCharts">
+            
+                    </div>
+                </div>
+            
+            </div>
+                </div>
+            </div>
+                
+        </div>
+    </body>
+</html>

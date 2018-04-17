@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #005792;
+    background: -webkit-linear-gradient(to right, #45459a, #005792);
+    background: linear-gradient(to right, #45459a, #005792);
+
+}
+#heading{
+    font-weight: bold;
+}
+.box {
+    max-width: 500px;
+/*    min-height: 300px;*/
+}
+
+#sign-up-link{
+    text-decoration-line: none;
+}
+p{
+    margin-bottom: 0px;
+}
