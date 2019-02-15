@@ -4,6 +4,7 @@ var controller = function (excelCtrl, UICtrl, analyzer) {
     //default URLs
     var defaultFileURL = 'http://localhost/sales-dashboard/files/getdefault',
     fileLocation = "http://localhost/sales-dashboard/user_files/sheets/";
+
     //download the last/default file from server
     function downloadFile(fileName) {
         return new Promise(function(resolve, reject) {
